@@ -12,5 +12,6 @@
 @property (nonatomic, strong) UIView *containerView;
 @property NSInteger sectionCount;
 
-- (id)initWithFrame:(CGRect)frame delegate:(id<SGScrollWheelDelegate>)delegate numberOfSections:(NSInteger)numberOfSections;
+- (id)initWithFrame:(CGRect)frame delegate:(id<SGScrollWheelDelegate>)delegate numberOfSections:(NSInteger)numberOfSections image:(UIImage *)image;
+- (void)setupImage:(UIImage *)image;
 @end

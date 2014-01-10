@@ -22,6 +22,7 @@
 		AE08F3C6187F84DE00B9D642 /* SGScrollWheelTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AE08F3C5187F84DE00B9D642 /* SGScrollWheelTests.m */; };
 		AE08F3D4187F875300B9D642 /* SGScrollWheel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE08F3D1187F875300B9D642 /* SGScrollWheel.m */; };
 		AE08F3D5187F875300B9D642 /* SGSection.m in Sources */ = {isa = PBXBuildFile; fileRef = AE08F3D3187F875300B9D642 /* SGSection.m */; };
+		AE08F3DB1880B9AD00B9D642 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AE08F3DA1880B9AD00B9D642 /* Images.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		AE08F3D1187F875300B9D642 /* SGScrollWheel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGScrollWheel.m; sourceTree = "<group>"; };
 		AE08F3D2187F875300B9D642 /* SGSection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SGSection.h; sourceTree = "<group>"; };
 		AE08F3D3187F875300B9D642 /* SGSection.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SGSection.m; sourceTree = "<group>"; };
+		AE08F3DA1880B9AD00B9D642 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = SGScrollWheel/Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +88,7 @@
 		AE08F38E187F84DE00B9D642 = {
 			isa = PBXGroup;
 			children = (
+				AE08F3DA1880B9AD00B9D642 /* Images.xcassets */,
 				AE08F3A0187F84DE00B9D642 /* SGScrollWheel */,
 				AE08F3BF187F84DE00B9D642 /* SGScrollWheelTests */,
 				AE08F399187F84DE00B9D642 /* Frameworks */,
@@ -244,6 +247,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AE08F3DB1880B9AD00B9D642 /* Images.xcassets in Resources */,
 				AE08F3A5187F84DE00B9D642 /* InfoPlist.strings in Resources */,
 				AE08F3AE187F84DE00B9D642 /* Main.storyboard in Resources */,
 			);

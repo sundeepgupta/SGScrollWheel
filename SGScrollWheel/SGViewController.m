@@ -19,7 +19,8 @@
 
 - (void)setupScrollWheel {
     CGRect frame = CGRectMake(0, 0, 250, 250);
-    self.wheel = [[SGScrollWheel alloc] initWithFrame:frame delegate:self numberOfSections:12];
+    self.wheel = [[SGScrollWheel alloc] initWithFrame:frame delegate:self numberOfSections:12 image:[UIImage imageNamed:@"wheel"]];
+//    [self.wheel setupImage:[UIImage imageNamed:@"wheel"]];
     [self.view addSubview:self.wheel];
 }
 

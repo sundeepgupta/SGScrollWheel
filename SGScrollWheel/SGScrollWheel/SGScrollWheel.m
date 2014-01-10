@@ -24,15 +24,8 @@ static CGFloat deltaAngle;
 @implementation SGScrollWheel
 
 #pragma mark - Initialize
-- (instancetype)initWithCoder:(NSCoder *)aDecoder {
-    self = [super initWithCoder:aDecoder];
-    if (self) {
-        self.alpha = 0.3;
-    }
-    return self;
-}
 
-- (instancetype)initWithFrame:(CGRect)frame delegate:(id)delegate numberOfSections:(NSInteger)numberOfSections {
+- (instancetype)initWithFrame:(CGRect)frame delegate:(id)delegate numberOfSections:(NSInteger)numberOfSections image:(UIImage *)image {
     self = [super initWithFrame:frame];
     if (self) {
         self.backgroundColor = [UIColor yellowColor];
@@ -44,6 +37,7 @@ static CGFloat deltaAngle;
         [self drawWheel];
         [self setupTouchDistanceRange];
         [self setupSections];
+        [self setupImage:image];
     }
     return self;
 }
@@ -72,6 +66,16 @@ static CGFloat deltaAngle;
     self.containerView.backgroundColor = [UIColor lightGrayColor];
     self.containerView.alpha = 0.5;
 }
+
+
+- (void)setupImage:(UIImage *)image {
+    if (image) {
+        UIImageView *imageView = [[UIImageView alloc] initWithFrame:self.containerView.bounds];
+        imageView.image = image;
+        [self.containerView addSubview:imageView];
+    }
+}
+
 
 
 
