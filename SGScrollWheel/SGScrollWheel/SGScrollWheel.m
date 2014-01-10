@@ -28,9 +28,6 @@ static CGFloat deltaAngle;
 - (instancetype)initWithFrame:(CGRect)frame delegate:(id)delegate numberOfSections:(NSInteger)numberOfSections image:(UIImage *)image {
     self = [super initWithFrame:frame];
     if (self) {
-        self.backgroundColor = [UIColor yellowColor];
-        self.alpha = 0.3;
-        
         self.sectionCount = numberOfSections;
         self.delegate = delegate;
         [self setupAngleSize];
@@ -62,9 +59,6 @@ static CGFloat deltaAngle;
     self.containerView = [[UIView alloc] initWithFrame:self.bounds];
     self.containerView.userInteractionEnabled = NO;
     self.containerView.transform = CGAffineTransformMakeRotation(kRadiansOffset);
-    
-    self.containerView.backgroundColor = [UIColor lightGrayColor];
-    self.containerView.alpha = 0.5;
 }
 
 

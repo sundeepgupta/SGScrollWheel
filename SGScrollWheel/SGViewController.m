@@ -3,6 +3,7 @@
 
 @interface SGViewController () <SGScrollWheelDelegate>
 @property (strong, nonatomic) SGScrollWheel *wheel;
+@property (weak, nonatomic) IBOutlet UIView *wheelView;
 @property (weak, nonatomic) IBOutlet UILabel *label;
 @property NSInteger value;
 @end
@@ -18,10 +19,10 @@
 }
 
 - (void)setupScrollWheel {
-    CGRect frame = CGRectMake(0, 0, 250, 250);
-    self.wheel = [[SGScrollWheel alloc] initWithFrame:frame delegate:self numberOfSections:12 image:[UIImage imageNamed:@"wheel"]];
-//    [self.wheel setupImage:[UIImage imageNamed:@"wheel"]];
-    [self.view addSubview:self.wheel];
+    CGRect frame = self.wheelView.bounds;
+    self.wheel = [[SGScrollWheel alloc] initWithFrame:frame delegate:self numberOfSections:12 image:nil];
+    [self.wheel setupImage:[UIImage imageNamed:@"wheel"]];
+    [self.wheelView addSubview:self.wheel];
 }
 
 - (void)setupValue {

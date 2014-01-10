@@ -16,6 +16,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tZ9-Rq-K0P" userLabel="wheelView">
+                                <rect key="frame" x="35" y="159" width="250" height="250"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="250" id="7D2-bl-mVY"/>
+                                    <constraint firstAttribute="height" constant="250" id="YQi-hH-KT1"/>
+                                </constraints>
+                            </view>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S1Y-5D-t6p">
                                 <rect key="frame" x="20" y="527" width="280" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -29,6 +38,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstAttribute="centerX" secondItem="tZ9-Rq-K0P" secondAttribute="centerX" id="0mp-CF-WwK"/>
+                            <constraint firstAttribute="centerY" secondItem="tZ9-Rq-K0P" secondAttribute="centerY" id="2IU-8S-Era"/>
                             <constraint firstItem="Yky-IN-uAE" firstAttribute="top" secondItem="S1Y-5D-t6p" secondAttribute="bottom" constant="20" id="6dd-aa-tUx"/>
                             <constraint firstItem="S1Y-5D-t6p" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" id="BGJ-Bh-hF8"/>
                             <constraint firstAttribute="trailing" secondItem="S1Y-5D-t6p" secondAttribute="trailing" constant="20" id="fYl-Ss-y3t"/>
@@ -36,6 +47,7 @@
                     </view>
                     <connections>
                         <outlet property="label" destination="S1Y-5D-t6p" id="Dgg-Fc-hve"/>
+                        <outlet property="wheelView" destination="tZ9-Rq-K0P" id="bSl-hs-iEy"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
