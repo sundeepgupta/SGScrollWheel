@@ -17,3 +17,9 @@ Toastmasters Timer
 ==================
 
 The [Toastmasters Timer](https://itunes.apple.com/us/app/toastmasters-timer/id708807408) app uses this class to select times for the various colours.
+
+
+License
+=======
+
+Governed under WTFPL. See LICENSE.txt for details.
